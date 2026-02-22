@@ -43,7 +43,13 @@ import {
   LibraryBig,
   LayoutDashboard,
   Star,
-  FileText
+  FileText,
+  ChevronUp,
+  ChevronDown,
+  StarOff,
+  ShoppingBag,
+  Trash2,
+  Zap
 } from "lucide-react";
 
 const ICON_MAP = {
@@ -91,7 +97,13 @@ const ICON_MAP = {
   LibraryBig,
   LayoutDashboard,
   Star,
-  FileText
+  FileText,
+  ChevronUp,
+  ChevronDown,
+  StarOff,
+  ShoppingBag,
+  Trash2,
+  Zap
 };
 
 const Icon = ({

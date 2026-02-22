@@ -16,14 +16,17 @@ const names = [
 export function generateProduct(index, categories) {
   const category = categories[index % categories.length];
   const name = names[index % names.length];
-
+  const price = parseFloat((Math.random() * 500 + 10)?.toFixed(2));
+  const rating = parseFloat((Math.random() * 2 + 3)?.toFixed(1));
+  
   return {
     id: `product-${index + 1}`,
     name: `${name} - Model ${index + 1}`,
-    price: 10 + (index % 500),
+    price,
     category,
-    rating: 3 + (index % 2),
+    rating,
     isNew: index % 50 === 0,
-    image: `https://picsum.photos/seed/${index}/400/600`
+    image: `https://picsum.photos/seed/${index+1}/400/600`,
+    imageAlt: `Professional product photography of ${name} in ${category} category with modern studio lighting and clean white background`
   };
 }

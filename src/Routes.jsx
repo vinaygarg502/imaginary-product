@@ -24,7 +24,7 @@ const Ebook = lazy(() =>
 );
 
 const Library = lazy(() =>
-  import("@/pages/Library")
+  import("@/pages/library")
 );
 
 // ✅ Simple route loader

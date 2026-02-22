@@ -26,7 +26,7 @@ const getColumnCount = (width) => {
 
 const ProductGrid = ({ products, onProductClick }) => {
   return (
-    <div className="h-[calc(100vh-200px)] overflow-y-scroll">
+    <div className="h-[calc(100vh-200px)]">
       <AutoSizer>
         {(size) => (
           <GridRenderer
